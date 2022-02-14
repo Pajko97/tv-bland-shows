@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
 import renderer from "react-test-renderer";
 import API from "../../../api/shows-api";
 import Show from "../../../models/Show";
@@ -11,7 +10,7 @@ it("render app", async () => {
   await api
     .getShow(6)
     .then((res) => {
-      res.data = show;
+      show = res.data
       render = renderer
         .create(
             <ShowInfo show={show} />

@@ -24,7 +24,7 @@ interface SingleShow {
     runtime: number,
     schedule: {
         time : string,
-        days: Array<string>
+        days: [string]
     },
     status: String,
     summary: string,

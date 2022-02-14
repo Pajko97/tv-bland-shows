@@ -1,17 +1,17 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
 import renderer from "react-test-renderer";
 import API from "../../api/shows-api";
 import Show from "./Show";
 
-it("render app", async () => {
-  let render;
-  let api = new API();
-  await api
-    .getShowCast(1)
-    .then((res) => {
-      render = renderer.create(<Show id={1} />).toJSON();
-    })
-    .catch((error) => console.error(error));
+it('renders Show Page', async () => {
+    let render;
+      render = renderer.create(
+          <BrowserRouter>
+            <Show id={3}/>
+          </BrowserRouter>
+      ).toJSON();
 
   expect(render).toMatchSnapshot();
-});
+
+  });

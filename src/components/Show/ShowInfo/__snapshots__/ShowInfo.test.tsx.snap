@@ -1,3 +1,77 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`render app 1`] = `undefined`;
+exports[`render app 1`] = `
+<div
+  className="content_column"
+>
+  <h2>
+    Show Info
+  </h2>
+  <div
+    className="column_item"
+  >
+    <p
+      className="item_key"
+    >
+      Streaming on
+    </p>
+    <p
+      className="item_value"
+    >
+      The CW
+    </p>
+  </div>
+  <div
+    className="column_item"
+  >
+    <p
+      className="item_key"
+    >
+      Schedule
+    </p>
+    <p
+      className="item_value"
+    >
+      <span>
+        Wednesday
+      </span>
+    </p>
+  </div>
+  <div
+    className="column_item"
+  >
+    <p
+      className="item_key"
+    >
+      Status
+    </p>
+    <p
+      className="item_value"
+    >
+      Ended
+    </p>
+  </div>
+  <div
+    className="column_item"
+  >
+    <p
+      className="item_key"
+    >
+      Genres
+    </p>
+    <p
+      className="item_value"
+    >
+      <span>
+        Action
+      </span>
+      <span>
+        Adventure
+      </span>
+      <span>
+        Science-Fiction
+      </span>
+    </p>
+  </div>
+</div>
+`;
