@@ -5,7 +5,6 @@ import Landing from './views/Landing/Landing'
 import React from 'react'
 
 const AppRoutes = () => {
-
 	return (
 		<React.Fragment>
 			<Routes>

@@ -13,7 +13,6 @@ function App(props: any) {
 				<div>
 					<div className={style.header}>
 						<h1>TV Bland</h1>
-						<p>TV Show and Web series database. Create personalized schedules. Episode guide, cast, crew and character information</p>
 					</div>
 					<AppRoutes/>
 				</div>

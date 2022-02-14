@@ -4,13 +4,24 @@ exports[`renders home 1`] = `
 <div
   className="home_wrapper"
 >
-  <h1
-    className="headline"
-  >
-    Last added shows
-  </h1>
   <div
-    className="show_list"
-  />
+    className="offset"
+  >
+    <p>
+      TV Show and web series database. Create personalized schedules. Episode guide, cast, crew and character information.
+    </p>
+  </div>
+  <div
+    className="content"
+  >
+    <h1
+      className="headline"
+    >
+      Last added shows
+    </h1>
+    <div
+      className="show_list"
+    />
+  </div>
 </div>
 `;

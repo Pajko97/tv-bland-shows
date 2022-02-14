@@ -8,7 +8,6 @@ type ComponentProps = {
 
 export default function ShowInfo(props: ComponentProps) {
   let show_data = props.show;
-  console.log(show_data)
   let genres = show_data?.genres;
   let days_showing = show_data.schedule.days;
   

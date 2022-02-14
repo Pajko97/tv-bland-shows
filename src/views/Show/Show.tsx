@@ -10,11 +10,9 @@ import ShowInfo from "../../components/Show/ShowInfo/ShowInfo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faStarHalfAlt } from "@fortawesome/free-solid-svg-icons";
 
-type Props = {
-  id: number;
-};
 
-function Show(props: Props) {
+
+function Show(props: any) {
   const [show, setShow] = useState<SingleShow>();
 
   let { id }: any = useParams();

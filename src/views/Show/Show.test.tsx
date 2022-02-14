@@ -6,9 +6,12 @@ import Show from "./Show";
 
 it('renders Show Page', async () => {
     let render;
+    const match = { params: { id: 1 } }
+
+        window.history.pushState({}, 'Test title', 'http://localhost:3000/shows/1')
       render = renderer.create(
           <BrowserRouter>
-            <Show id={3}/>
+            <Show />
           </BrowserRouter>
       ).toJSON();
 
