@@ -17,9 +17,7 @@
 .item_text {
   display: flex;
 }
-.item_text .item_key,
-.item_text .item_value {
-}
+
 .column_item img {
   align-items: center;
   width: 5rem;

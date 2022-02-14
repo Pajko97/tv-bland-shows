@@ -30,8 +30,6 @@
   color: red;
 }
 
-.item_value span {
-}
 
 @media only screen and (max-width: 800px) {
   .content_column {

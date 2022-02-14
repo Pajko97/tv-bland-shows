@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
 import renderer from "react-test-renderer";
 import API from "../../api/shows-api";
 import ShowModel from "../../models/Show";
@@ -11,7 +10,7 @@ it("render app", async () => {
   await api
     .getShowCast(1)
     .then((res) => {
-      render = renderer.create(<Show id={4} />).toJSON();
+      render = renderer.create(<Show id={1} />).toJSON();
     })
     .catch((error) => console.error(error));
 

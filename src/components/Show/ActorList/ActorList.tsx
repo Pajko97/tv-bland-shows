@@ -13,7 +13,7 @@ export default function ActorList(props: ComponentProps) {
   useEffect(() => {
     let api = new API();
     api.getShowCast(props.showId).then((res) => setShowCast(res.data));
-  }, []);
+  }, [props.showId]);
 
   return (
     <div className={style.content_column}>
