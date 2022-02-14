@@ -11,7 +11,10 @@ it('render app', async () => {
     let api = new API()
     await api.getShowCast(1)
     .then((res) => {
-      render = renderer.create(<ActorList showId={4}/>).toJSON();
+      render = renderer.create(
+      <BrowserRouter>
+        <ActorList showId={4}/>
+      </BrowserRouter>).toJSON();
     })
     .catch((error) => console.error(error));
 

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders shows without error 1`] = `
+<div
+  className="home_wrapper"
+>
+  <h1
+    className="headline"
+  >
+    Last added shows
+  </h1>
+  <div
+    className="show_list"
+  />
+</div>
+`;
