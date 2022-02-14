@@ -8,7 +8,7 @@ it('renders home', async () => {
   let render;
     render = renderer.create(
         <BrowserRouter>
-          <ActorList showId={2}/>
+          <ActorList showId={6657}/>
         </BrowserRouter>
     ).toJSON();
 

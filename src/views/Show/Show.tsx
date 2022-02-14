@@ -14,8 +14,9 @@ import { faStar, faStarHalfAlt } from "@fortawesome/free-solid-svg-icons";
 
 function Show(props: any) {
   const [show, setShow] = useState<SingleShow>();
-
-  let { id }: any = useParams();
+  let params = useParams();
+  let IdFromURL = params.id
+  let id = props.id ? props.id : IdFromURL
   let showId = parseInt(id);
 
   useEffect(() => {

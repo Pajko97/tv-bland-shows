@@ -1,5 +1,4 @@
 .show_wrapper {
-  padding: 10rem;
   font-family: "Red Hat Display";
 }
 
@@ -20,6 +19,10 @@
   line-height: 150%;
 }
 
+.show_header img {
+    margin-bottom:-3rem;
+}
+
 .show_basic_info .rate {
   margin-left: 0.5rem;
 }
@@ -28,6 +31,13 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  padding:5rem 10rem;
+}
+
+.show_header {
+    background-color:#EDEDED;
+    width:auto;
+    padding:0 10rem;
 }
 
 @media only screen and (max-width: 800px) {
