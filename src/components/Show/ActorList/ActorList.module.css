@@ -39,6 +39,9 @@
     margin-right: 0;
     margin-top: 2rem;
   }
+  .item_key {
+      margin-left: 1rem;
+  }
   .item_text p {
     align-self: flex-start;
   }
