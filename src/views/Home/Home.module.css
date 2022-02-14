@@ -1,12 +1,16 @@
 .home_wrapper {
-    margin:auto 5rem;
+    margin:auto 10rem;
+    margin-top:-10rem;
     padding-top:0;
     font-family: 'Red Hat Display';
 }
 .show_list {
     display: flex;
     flex-wrap: wrap;
-    grid-gap: 2rem;
+    grid-gap: 1.5rem;
+   
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 

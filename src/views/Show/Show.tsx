@@ -44,7 +44,7 @@ function Show(props: Props) {
                 />
                 <span className={style.rate}>
                   {show.rating.average
-                    ? `${show.rating.average}/5`
+                    ? `${Math.round(show.rating.average/2 * 10) / 10}/5`
                     : "Not provided"}
                 </span>
                 <h1>{show.name}</h1>

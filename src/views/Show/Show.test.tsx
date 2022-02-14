@@ -1,7 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import API from "../../api/shows-api";
-import ShowModel from "../../models/Show";
 import Show from "./Show";
 
 it("render app", async () => {

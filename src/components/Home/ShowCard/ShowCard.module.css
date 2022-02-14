@@ -1,13 +1,12 @@
 .show_card {
   font-family: "Red Hat Display";
-  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.46);
-  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.46);
   max-width: 13rem;
 }
 
 .show_card p {
   font-family: "Poppins";
   padding: 1rem;
+  padding-left: 0;
   font-weight: 500;
   font-size: 1.2rem;
 }
@@ -18,9 +17,11 @@
 
 .rating {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   padding: 1rem;
+  padding-bottom: 0;
+  padding-left: 0;
 }
 
 @media only screen and (max-width: 800px) {

@@ -4,8 +4,8 @@
   justify-content: flex-start;
   flex-basis: grow;
   width: 100%;
-  border: 1px solid black;
   padding: 2rem;
+  padding-left: 0;
   margin-right: 2rem;
   margin-top: 2rem;
 }
@@ -35,5 +35,9 @@
   .content_column {
     width: auto;
     margin-right: 0;
+  }
+  .column_item {
+      display: flex;
+      flex-wrap: wrap;
   }
 }

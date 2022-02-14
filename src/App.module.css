@@ -1,16 +1,22 @@
 .header  {
-  padding:2rem 5rem;
-  background-color: rgb(41, 113, 113);
-  color: white;
+  padding:2rem 10rem;
+  background-color: silver;
+  color: black;
   font-family: 'Red Hat Display';
+  height: 20rem;
 }
 
+
+.header p {
+  max-width: 30rem;
+}
 
                 
 
 @media only screen and (max-width: 800px) {
     .header {
       padding: 2rem 2rem;
+      height: auto;
     }
     .header p {
       display: none;

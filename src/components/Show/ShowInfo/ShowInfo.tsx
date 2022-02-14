@@ -8,8 +8,9 @@ type ComponentProps = {
 
 export default function ShowInfo(props: ComponentProps) {
   let show_data = props.show;
-  let days_showing = show_data?.schedule?.days;
-  let genres = show_data?.genres
+  let days_showing = show_data.schedule.days;
+  let genres = show_data?.genres;
+
   return (
     <div className={style.content_column}>
       <h2>Show Info</h2>
