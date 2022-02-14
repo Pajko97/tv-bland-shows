@@ -33,8 +33,9 @@
 
 @media only screen and (max-width: 800px) {
   .content_column {
-    width: auto;
+    width: 90%;
     margin-right: 0;
+    padding-left:2rem;
   }
   .column_item {
       display: flex;

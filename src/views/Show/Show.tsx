@@ -13,7 +13,7 @@ import { faStar, faStarHalfAlt } from "@fortawesome/free-solid-svg-icons";
 
 
 function Show(props: any) {
-  const [show, setShow] = useState<SingleShow>();
+  const [show, setShow] = useState<SingleShow| any>();
   let params = useParams();
   let IdFromURL = params.id
   let id = props.id ? props.id : IdFromURL
@@ -28,7 +28,7 @@ function Show(props: any) {
     rating > 5 ? Math.round((rating / 2) * 10) / 10 : rating;
 
   return (
-    <React.Fragment>
+    <>
       {show && (
         <div className={style.show_wrapper}>
           <div>
@@ -58,7 +58,7 @@ function Show(props: any) {
           </div>
         </div>
       )}
-    </React.Fragment>
+    </>
   );
 }
 

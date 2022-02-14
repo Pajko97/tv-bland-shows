@@ -1,18 +1,17 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import renderer from "react-test-renderer";
-import API from "../../api/shows-api";
-import Show from "./Show";
+import Show from "../Show/Show";
 
-test('renders Individual Show Page', async () => {
-    let render;
+it('renders Show', () => {
+  let render;
 
-      render = renderer.create(
-            <BrowserRouter>
-                <Show  />
-            </BrowserRouter>
-      ).toJSON();
+    render = renderer.create(
+        <BrowserRouter>
+          <Show showId={6657}/>
+        </BrowserRouter>
+    ).toJSON();
 
-  expect(render).toMatchSnapshot();
+expect(render).toMatchSnapshot();
 
-  });
+});

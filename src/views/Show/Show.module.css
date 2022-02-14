@@ -41,20 +41,23 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .show_wrapper {
-    padding: 3rem;
-  }
+  
   .show_basic_info {
-    margin-top: 2rem;
+    margin-top: 5rem;
+    padding:0 2rem;
   }
   .show_header {
     display: flex;
+    padding: 0;
     flex-direction: column;
+    width: 100vw;
   }
   .show_header img {
     margin-right: 0;
+    padding-left: 2rem;
   }
   .show_details {
     flex-direction: column;
+    padding:0;
   }
 }

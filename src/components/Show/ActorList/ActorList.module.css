@@ -26,7 +26,6 @@
 
 .item_key {
   color: black;
-  margin-left: 1rem;
 }
 
 .item_value {
@@ -38,9 +37,12 @@
   .content_column {
     margin-right: 0;
     margin-top: 2rem;
+    padding-left:2rem;
+    padding-right: 2rem;
+    width: 40rem;
   }
   .item_key {
-      margin-left: 1rem;
+      margin-right: 1;
   }
   .item_text p {
     align-self: flex-start;
