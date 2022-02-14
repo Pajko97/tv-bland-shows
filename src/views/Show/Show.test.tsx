@@ -11,7 +11,11 @@ it('renders show page without error', async () => {
     await api.getShow(6)
     .then((res) => {
         res.data = show;
-      render = renderer.create(<Show />).toJSON();
+      render = renderer.create(
+      <BrowserRouter>
+        <Show />
+      </BrowserRouter>
+      ).toJSON();
     })
     .catch((error) => console.error(error));
 

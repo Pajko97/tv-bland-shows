@@ -1,7 +1,4 @@
-import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import API from '../../../api/shows-api'
-import Schedule from '../../../models/Schedule'
 import Show from '../../../models/Show'
 import style from './ShowCard.module.css'
 type Props = {
