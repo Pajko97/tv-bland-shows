@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render app 1`] = `
+<div>
+  <div
+    className="show_card"
+  >
+    <a
+      href="/shows/2"
+      onClick={[Function]}
+    >
+      <img
+        alt="Person of Interest"
+        src="https://static.tvmaze.com/uploads/images/medium_portrait/163/407679.jpg"
+      />
+    </a>
+    <p>
+      Person of Interest
+    </p>
+  </div>
+</div>
+`;

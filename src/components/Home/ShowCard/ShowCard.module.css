@@ -1,0 +1,28 @@
+.show_card {
+    font-family: 'Red Hat Display';
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.46); 
+box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.46);
+margin:1rem;
+max-width: 10rem;
+}
+
+.show_card img {
+    max-width: 10rem;
+}
+.show_card a {
+}
+.show_card p {
+    font-family: 'Poppins';
+    padding: 1rem;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    .show_card {
+        max-width: 8rem;
+    }
+    .show_card img {
+        max-width: 8rem;
+    }
+}

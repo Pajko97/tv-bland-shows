@@ -1,0 +1,41 @@
+.content_column {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-basis: grow;
+    width: 100%;
+    border:1px solid black;
+    padding:2rem;
+    margin-right: 2rem;
+}
+
+.column_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+.column_item span {
+    margin-right: 0.25rem;
+}
+
+.item_key {
+    color:black;
+}
+
+.item_value {
+    color: red;
+}
+
+.item_value span {
+}
+
+
+@media only screen and (max-width: 800px) {
+    .content_column {
+        width: auto;
+        margin-right: 0;
+    }
+}

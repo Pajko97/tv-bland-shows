@@ -1,26 +1,26 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import AppRoutes from './routes';
+import style from './App.module.css'
+import './assets/css/root.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App(props: any) {
+	
+	return (
+		<div>
+			<BrowserRouter>
+				<div>
+					<div className={style.header}>
+						<h1>TV Bland</h1>
+						<p>TV Show and Web series database. Create personalized schedules. Episode guide, cast, crew and character information</p>
+					</div>
+					<AppRoutes/>
+				</div>
+			</BrowserRouter>
+		</div>
+
+	);
 }
 
 export default App;

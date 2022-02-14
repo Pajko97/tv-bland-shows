@@ -1,0 +1,42 @@
+.show_wrapper {
+    padding:5rem;
+    font-family: 'Red Hat Display';
+}
+
+.show_header {
+    display: flex;
+}
+.show_header img {
+    margin-right: 5rem;
+    min-height: 100%;
+    max-height: auto;
+}
+
+.show_basic_info {
+    max-width: 40rem;
+}
+.show_basic_info p {
+    line-height: 150%;
+}
+
+.show_basic_info .rate {
+    margin-left:0.5rem;
+}
+
+.show_details {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 800px) {
+    .show_wrapper {
+        padding:3rem;
+    }
+    .show_header {
+        display: flex;
+        flex-direction: column;
+    }
+    .show_details {
+flex-direction: column;
+    }
+}

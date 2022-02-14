@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render app 1`] = `
+<div
+  className="content_column"
+>
+  <h2
+    className="item_headline"
+  >
+    Actors
+  </h2>
+</div>
+`;

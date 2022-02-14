@@ -1,0 +1,39 @@
+.home_wrapper {
+    display:flex;
+    padding:5rem;
+    padding-top:0;
+    flex-direction: column;
+    font-family: 'Red Hat Display';
+}
+.show_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.home_wrapper h1 {
+    margin-left:1rem;
+    margin-top: 2rem;
+}
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+    .home_wrapper {
+        padding:1rem;
+    }
+    .home_wrapper h1 {
+        margin-left: 2rem;
+        
+    }
+    .show_list {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+   
+    
+}
