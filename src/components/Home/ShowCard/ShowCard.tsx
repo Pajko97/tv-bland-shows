@@ -14,7 +14,7 @@ export default function ShowCard(props: Props) {
     <div>
        <div className={style.show_card}>
         <Link to={`/shows/${props.data.id}`}>
-          <img src={props.data.image?.medium} alt={props.data.name} />
+          <img src={props.data.image ? props.data.image.medium : "https://via.placeholder.com/160x170"} alt={props.data.name} />
         </Link>
         <p>{props.data.name}</p>
       </div>
