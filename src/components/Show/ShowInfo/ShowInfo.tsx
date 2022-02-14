@@ -12,7 +12,7 @@ type ComponentProps = {
 
 export default function ShowInfo(props: ComponentProps) {
   let show_data = props.show
-  let days_showing = props.show.schedule?.days
+  let days_showing = show_data?.schedule?.days
   let { genres } = show_data
   return (
       <div className={style.content_column}>

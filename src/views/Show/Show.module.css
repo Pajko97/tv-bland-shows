@@ -32,9 +32,15 @@
     .show_wrapper {
         padding:3rem;
     }
+    .show_basic_info {
+        margin-top : 2rem;
+    }
     .show_header {
         display: flex;
         flex-direction: column;
+    }
+    .show_header img {
+        margin-right: 0;
     }
     .show_details {
 flex-direction: column;

@@ -41,7 +41,7 @@ function Show(props: Props) {
               fullSymbol={<FontAwesomeIcon icon={faStar}/>}
 
             />
-            <span className={style.rate}>{show.rating.average ? `${show.rating.average/2}/5` : 'Not provided'}</span>
+            <span className={style.rate}>{show.rating.average ? `${show.rating.average}/5` : 'Not provided'}</span>
             <h1>{show.name}</h1>
             <p>{striptags(show.summary)}</p>
             </div>
