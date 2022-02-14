@@ -16,9 +16,9 @@ function Home () {
     <div className={style.home_wrapper}>
         <h1 className={style.headline}>Last added shows</h1>
         <div className={style.show_list}>
-            {shows && shows.map((item: Schedule, id) => {
+            {shows && shows.map((item: Schedule, i) => {
                 return(
-                    <ShowCard data={item.show} />
+                    <ShowCard key={i} data={item.show} />
                 )
             })}
         </div>

@@ -1,48 +1,50 @@
 .show_wrapper {
-    padding:5rem;
-    font-family: 'Red Hat Display';
+  padding: 5rem;
+  font-family: "Red Hat Display";
 }
 
 .show_header {
-    display: flex;
+  display: flex;
 }
 .show_header img {
-    margin-right: 5rem;
-    min-height: 100%;
-    max-height: auto;
+  margin-right: 5rem;
+  min-height: 100%;
+  max-width: 25rem;
+  max-height: auto;
 }
 
 .show_basic_info {
-    max-width: 40rem;
+  max-width: 40rem;
 }
 .show_basic_info p {
-    line-height: 150%;
+  line-height: 150%;
 }
 
 .show_basic_info .rate {
-    margin-left:0.5rem;
+  margin-left: 0.5rem;
 }
 
 .show_details {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 @media only screen and (max-width: 800px) {
-    .show_wrapper {
-        padding:3rem;
-    }
-    .show_basic_info {
-        margin-top : 2rem;
-    }
-    .show_header {
-        display: flex;
-        flex-direction: column;
-    }
-    .show_header img {
-        margin-right: 0;
-    }
-    .show_details {
-flex-direction: column;
-    }
+  .show_wrapper {
+    padding: 3rem;
+  }
+  .show_basic_info {
+    margin-top: 2rem;
+  }
+  .show_header {
+    display: flex;
+    flex-direction: column;
+  }
+  .show_header img {
+    margin-right: 0;
+  }
+  .show_details {
+    flex-direction: column;
+  }
 }

@@ -1,21 +1,17 @@
-import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
-import renderer from 'react-test-renderer';
-import API from '../../../api/shows-api';
-import ActorList from './ActorList';
+import React from "react";
+import renderer from "react-test-renderer";
+import API from "../../../api/shows-api";
+import ActorList from "./ActorList";
 
-it('render app', async () => {
-    let render;
-    let api = new API()
-    await api.getShowCast(1)
+it("render app", async () => {
+  let render;
+  let api = new API();
+  await api
+    .getShowCast(1)
     .then((res) => {
-      render = renderer.create(
-      <BrowserRouter>
-        <ActorList showId={4}/>
-      </BrowserRouter>).toJSON();
+      render = renderer.create(<ActorList showId={4} />).toJSON();
     })
     .catch((error) => console.error(error));
 
   expect(render).toMatchSnapshot();
-
-})
+});

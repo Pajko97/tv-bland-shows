@@ -1,5 +1,5 @@
 .header  {
-  padding:2rem 6rem;
+  padding:2rem 5rem;
   background-color: rgb(41, 113, 113);
   color: white;
   font-family: 'Red Hat Display';
@@ -10,7 +10,7 @@
 
 @media only screen and (max-width: 800px) {
     .header {
-      padding: 2rem 3rem;
+      padding: 2rem 2rem;
     }
     .header p {
       display: none;

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders shows without error 1`] = `
+exports[`renders home 1`] = `
 <div
   className="home_wrapper"
 >
