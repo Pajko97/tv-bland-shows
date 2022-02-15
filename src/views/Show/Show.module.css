@@ -63,8 +63,8 @@
   }
   .show_header img {
     margin-right: 0;
-    width:100%;
-    margin-left: 2rem;
+    width:85%;
+    margin-left: 1.6rem;
   }
   .show_details {
     flex-direction: column;

@@ -27,7 +27,7 @@ export default function ShowInfo(props: ComponentProps) {
         <p className={style.item_key}>{t('schedule')}</p>
         <p className={style.item_value}>
           {days_showing.map((day: string, id:number) => {
-            return <span key={id}>{day}</span>;
+            return <span key={id}>{day} </span>;
           })}
         </p>
       </div>
@@ -42,7 +42,7 @@ export default function ShowInfo(props: ComponentProps) {
         <p className={style.item_value}>
           {genres
             ? genres.map((genre: string, i: number) => {
-                return <span key={i}>{genre}</span>;
+                return <span key={i}>{genre}, </span>;
               })
             : "No genre"}
         </p>

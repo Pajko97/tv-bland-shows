@@ -35,7 +35,8 @@
   .content_column {
     width: 90%;
     margin-right: 0;
-    padding-left:2rem;
+    padding-left:1.6rem;
+    padding-right: 1.6rem;
   }
   .column_item {
       display: flex;
