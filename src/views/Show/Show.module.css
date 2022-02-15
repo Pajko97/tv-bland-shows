@@ -40,6 +40,16 @@
     padding:0 10rem;
 }
 
+@media (min-width:800px) and (max-width:1024px) {
+  .show_details {
+    padding-left:3rem;
+    padding-right: 3rem;
+  }
+  .show_header {
+    padding-left:3rem;
+    padding-right: 3rem;
+  }
+}
 @media only screen and (max-width: 800px) {
   
   .show_basic_info {
@@ -50,12 +60,11 @@
     display: flex;
     padding: 0;
     flex-direction: column;
-    width: 100vw;
   }
   .show_header img {
     margin-right: 0;
     width:100%;
-    padding-left: 2rem;
+    margin-left: 2rem;
   }
   .show_details {
     flex-direction: column;
