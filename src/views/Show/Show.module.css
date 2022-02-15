@@ -54,6 +54,7 @@
   }
   .show_header img {
     margin-right: 0;
+    width:100%;
     padding-left: 2rem;
   }
   .show_details {

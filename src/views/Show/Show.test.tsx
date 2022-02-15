@@ -1,17 +1,12 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
 import renderer from "react-test-renderer";
-import Show from "../Show/Show";
+import Show from "./Show";
 
-it('renders Show', () => {
-  let render;
 
-    render = renderer.create(
-        <BrowserRouter>
-          <Show showId={6657}/>
-        </BrowserRouter>
+it('renders correctly', () => {
+    const tree = renderer.create(
+      <Show id={6048}/>
     ).toJSON();
-
-expect(render).toMatchSnapshot();
-
+    console.log(tree)
+    expect(tree).toMatchSnapshot();
 });

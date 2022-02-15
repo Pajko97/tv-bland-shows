@@ -1,3 +1,4 @@
+import { t } from "i18next";
 import Show from "../../../models/Show";
 import style from "./ShowInfo.module.css";
 
@@ -14,14 +15,14 @@ export default function ShowInfo(props: ComponentProps) {
 
   return (
     <div className={style.content_column}>
-      <h2>Show Info</h2>
+      <h2>${t('showInfo')}</h2>
       <div className={style.column_item}>
-        <p className={style.item_key}>Streaming on</p>
-        <p className={style.item_value}>{show_data.network.name}</p>
+        <p className={style.item_key}>${t('streamingOn')}</p>
+        <p className={style.item_value}>{show_data.network ? show_data.network.name : ''}</p>
       </div>
 
       <div className={style.column_item}>
-        <p className={style.item_key}>Schedule</p>
+        <p className={style.item_key}>${t('schedule')}</p>
         <p className={style.item_value}>
           {days_showing.map((day: string, id:number) => {
             return <span key={id}>{day}</span>;
@@ -30,12 +31,12 @@ export default function ShowInfo(props: ComponentProps) {
       </div>
 
       <div className={style.column_item}>
-        <p className={style.item_key}>Status</p>
+        <p className={style.item_key}>${t('status')}</p>
         <p className={style.item_value}>{show_data.status}</p>
       </div>
 
       <div className={style.column_item}>
-        <p className={style.item_key}>Genres</p>
+        <p className={style.item_key}>${t('genres')}</p>
         <p className={style.item_value}>
           {genres
             ? genres.map((genre: string, i: number) => {

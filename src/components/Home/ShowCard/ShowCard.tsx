@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Show from "../../../models/Show";
 import style from "./ShowCard.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar, faStarHalfAlt } from "@fortawesome/free-solid-svg-icons";
+
 type Props = {
   data: Show;
 };
@@ -26,10 +26,10 @@ export default function ShowCard(props: Props) {
       </Link>
       <div className={style.rating}>
         <Rating
-          emptySymbol={<FontAwesomeIcon icon={faStarHalfAlt} />}
+          emptySymbol={'fa fa-star-o medium'}
           readonly
           initialRating={calcRating(props.data.rating.average)}
-          fullSymbol={<FontAwesomeIcon icon={faStar} />}
+          fullSymbol={'fa fa-star medium'}
         />
       </div>
       <p>{props.data.name}</p>
