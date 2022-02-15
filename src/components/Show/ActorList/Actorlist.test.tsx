@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import renderer from "react-test-renderer";
-import API from "../../../api/shows-api";
 import ActorList from "./ActorList";
 
 it('renders home', () => {
@@ -10,7 +9,6 @@ it('renders home', () => {
     render = renderer.create(
         <BrowserRouter>
           <ActorList showId={6657}/>
-          
         </BrowserRouter>
     ).toJSON();
 
