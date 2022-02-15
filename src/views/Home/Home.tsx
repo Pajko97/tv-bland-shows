@@ -1,4 +1,6 @@
+import { t } from "i18next";
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import API from "../../api/shows-api";
 import ShowCard from "../../components/Home/ShowCard/ShowCard";
 import Schedule from "../../models/Schedule";
@@ -10,13 +12,13 @@ function Home() {
     let api = new API();
     api.getLatestShows().then((res) => setShows(res.data));
   }, []);
+  const { t } = useTranslation('common')
 
   return (
     <div className={style.home_wrapper}>
       <div className={style.offset}>
         <p>
-          TV Show and web series database. Create personalized schedules.
-          Episode guide, cast, crew and character information.
+          {t('description')}
         </p>
       </div>
       <div className={style.content}>
